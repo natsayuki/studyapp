@@ -1,0 +1,17 @@
+.fullScreen{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+#searchWrapper, #searchForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#searchIn{
+  text-align: center;
+  transform: scale(1.5);
+}

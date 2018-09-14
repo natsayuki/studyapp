@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"TTS\"><param name=\"ios-package\" value=\"CDVTTS\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-tts": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-tts.tts",
+            "file": "plugins/cordova-plugin-tts/www/tts.js",
+            "pluginId": "cordova-plugin-tts",
+            "clobbers": [
+                "TTS"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-tts": "0.2.3"
+    }
+}
