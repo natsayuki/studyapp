@@ -14,10 +14,59 @@
     </head>
     <body>
       <div id="searchWrapper" class="fullScreen">
-        <form id="searchForm" onsubmit="return search()">
-          <h1>Search</h1>
-          <input id="searchIn" />
+        <form id="searchForm">
+          <h2 id="errorText">Filler</h2>
+          <h1>Enter Code</h1>
+          <input id="searchIn" type="number" />
+          <!-- <div id="goButton" action="submit">
+            <h2>Go</h2>
+          </div> -->
         </form>
+      </div>
+      <div id="mainWrapper" class="fullScreen">
+        <h1 id="titleText"></h1>
+        <h2 id="back">back</h2>
+        <div id="termsWrapper"></div>
+        <div id="study">
+          <h2>Study</h2>
+        </div>
+      </div>
+      <div id="studyWrapper" class="fullScreen">
+        <h2 id="studyBack">back</h2>
+        <div class="optionWrapper">
+          <h2 class="inline">Randomize</h2>
+          <label class="switch inline">
+            <input type="checkBox" id="randomizeCheck" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="optionWrapper">
+          <h2 class="inline">Answer First</h2>
+          <label class="switch inline">
+            <input type="checkBox" id="answerFirstCheck" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div id="startButton">
+          <h2>Start</h2>
+        </div>
+      </div>
+      <div id="gameWrapper" class="fullScreen">
+        <form id="gameForm">
+          <h2 id="resultText">Filler</h2>
+          <h1 id="termText">Filler</h1>
+          <input id="answerIn" />
+          <div id="nextButton">
+            <h2>Next</h2>
+          </div>
+        </form>
+      </div>
+      <div id="resultsWrapper" class="fullScreen">
+        <h1>Results</h1>
+        <h2 id="finishText">filler</h2>
+        <div id="okButton">
+          <h2>Ok</h2>
+        </div>
       </div>
     </body>
 </html>

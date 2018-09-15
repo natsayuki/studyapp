@@ -17,6 +17,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-keyboard.keyboard",
+    "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+    "pluginId": "cordova-plugin-keyboard",
+    "clobbers": [
+      "window.Keyboard"
+    ]
+  },
+  {
     "id": "cordova-plugin-speechrecognition.SpeechRecognition",
     "file": "plugins/cordova-plugin-speechrecognition/www/speechRecognition.js",
     "pluginId": "cordova-plugin-speechrecognition",
@@ -37,6 +45,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-dialogs": "2.0.1",
+  "cordova-plugin-keyboard": "1.2.0",
   "cordova-plugin-speechrecognition": "1.1.2",
   "cordova-plugin-texttospeech": "0.1.1"
 };

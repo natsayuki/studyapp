@@ -22,6 +22,9 @@
     <feature name="TTS">
         <param name="ios-package" value="CDVTTS" />
     </feature>
+    <feature name="Keyboard">
+        <param name="ios-package" onload="true" value="CDVKeyboard" />
+    </feature>
     <name>StudyApp</name>
     <description>
         A blank PhoneGap app.

@@ -5,13 +5,16 @@
   "cordova": {
     "platforms": [
       "ios"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-keyboard": {}
+    }
   },
   "dependencies": {
     "cordova-android": "^7.0.0",
-    "cordova-browser": "^5.0.4",
     "cordova-ios": "~4.5.5",
     "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-keyboard": "^1.2.0",
     "cordova-plugin-speechrecognition": "^1.2.0",
     "cordova-plugin-texttospeech": "^0.1.1"
   }

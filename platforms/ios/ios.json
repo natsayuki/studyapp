@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"TTS\"><param name=\"ios-package\" value=\"CDVTTS\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVKeyboard\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -19,6 +23,9 @@
     },
     "installed_plugins": {
         "cordova-plugin-tts": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-keyboard": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
@@ -31,9 +38,18 @@
             "clobbers": [
                 "TTS"
             ]
+        },
+        {
+            "id": "cordova-plugin-keyboard.keyboard",
+            "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+            "pluginId": "cordova-plugin-keyboard",
+            "clobbers": [
+                "window.Keyboard"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-tts": "0.2.3"
+        "cordova-plugin-tts": "0.2.3",
+        "cordova-plugin-keyboard": "1.2.0"
     }
 }
